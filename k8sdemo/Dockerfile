@@ -9,4 +9,4 @@ WORKDIR /var/www/html/
 #RUN rm -rf photogenic photogenic.zip
 RUN echo '<html><head><title>My Dockerized HTML First </title></head><body><h1>Hello from Docker!</h1></body></html>' > /var/www/html/index.html
 CMD ["/usr/sbin/httpd","-D", "FOREGROUND"]
-EXPOSE 80
+EXPOSE 80 443
